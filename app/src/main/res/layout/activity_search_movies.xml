@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchMovies">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/searchname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:hint="@string/movie_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/retrive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#37BC9B"
+                        app:strokeColor="#000000"
+                        app:strokeWidth="2dp"
+                        app:cornerRadius="100dp"
+                        android:textColor="@color/black"
+                        android:text="@string/retrieve_movie" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="#37BC9B"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp"
+                app:cornerRadius="100dp"
+                android:textColor="@color/black"
+                android:text="@string/save_movie_to_database" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Title:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Year:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Rated:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Released:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Runtime:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Genre:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Director" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Writer:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Actors:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:inputType="textPersonName"
+                        android:text="Plot:" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Title"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/syear"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Year"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/srated"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Rated"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/sreleased"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Released"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/sruntime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Runtime"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/sgenere"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Genre"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/sdirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Director"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/swriter"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Writer"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/sactors"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Actors"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/splot"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:gravity="center|left"
+                        android:hint="Plot"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

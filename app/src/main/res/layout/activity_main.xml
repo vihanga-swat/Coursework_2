@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/image" />
+
+    <Button
+        android:id="@+id/addmovie"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#37BC9B"
+        app:cornerRadius="100dp"
+        android:text="Add Movies to DB"
+        android:textColor="@color/black"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/searchmovie"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#37BC9B"
+        android:text="Search for Movies"
+        android:textColor="@color/black"
+        app:cornerRadius="100dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/searchactor"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#37BC9B"
+        android:text="Search for Actors"
+        android:textColor="@color/black"
+        app:cornerRadius="100dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
+
+
+</LinearLayout>
